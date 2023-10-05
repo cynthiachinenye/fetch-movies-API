@@ -1,0 +1,48 @@
+@import '../global.scss';
+
+.main{
+  width: $width;
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+  margin-left:20px;
+
+    .main-container{ 
+        
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top:30px;
+       
+    
+    #container{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap:wrap;
+        position:relative;
+    
+        img{
+            width:350px;
+            padding:20px;
+            
+        }
+
+        #play-icon{
+            // position:absolute;
+            // top:400px;
+            // left:80px;
+            // right:0px;
+            // bottom:0;
+            // align-items: center;
+            // display: flex;
+            // justify-content: center;
+    
+        }
+     
+    
+    }
+    }
+    
+}

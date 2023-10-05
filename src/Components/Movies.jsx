@@ -3,6 +3,7 @@ import React, { useEffect,useState } from 'react'
 import { Fragment } from 'react'
 import {AiFillPlayCircle} from 'react-icons/ai'
 import noImage from '../Assets/javier-esteban-8At6XBgVyyY-unsplash.jpg'
+import '../Styles/movies.scss'
 
 function Movies() {
   const [movieData, setMovieData] =useState([])
@@ -23,21 +24,21 @@ function Movies() {
  },[])
  console.log(movieData)
   return (
-    <Fragment>
+    <div className='main'>
       {
         movieData.map((movies)=> {
           return(
-            <Fragment>
+            <div className='main-container'>
           <div id='container'>
-           <AiFillPlayCircle color='green' fontSize={40} id='play-icon'/>
+           <AiFillPlayCircle color='green'  fontSize={40} id='play-icon'/>
            <img src= { movies.poster_path ?`${image}${movies.poster_path}`: noImage} alt=''/>
            <h3>{movies.title}</h3>
           </div>
-          </Fragment>
+          </div>
           )
         })
       }
-    </Fragment>
+    </div >
   )
 }
 
