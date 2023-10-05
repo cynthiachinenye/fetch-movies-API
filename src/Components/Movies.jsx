@@ -33,7 +33,7 @@ function Movies() {
           <div id='container'>
            <AiFillPlayCircle color='green'  fontSize={40} id='play-icon'/>
            <img src= { movies.poster_path ?`${image}${movies.poster_path}`: noImage} alt=''/>
-           <h3>{movies.title}</h3>
+           <h3 className=''>{movies.title}</h3>
           </div>
           </div>
           )
