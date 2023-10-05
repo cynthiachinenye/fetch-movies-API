@@ -1,11 +1,12 @@
 import axios from 'axios'
-import React, { useEffect,useState } from 'react'
-import { Fragment } from 'react'
+import React, { useContext, useEffect,useState } from 'react'
+import { container } from '../App'
 import {AiFillPlayCircle} from 'react-icons/ai'
 import noImage from '../Assets/javier-esteban-8At6XBgVyyY-unsplash.jpg'
 import '../Styles/movies.scss'
 
 function Movies() {
+  const {toggle}= useContext(container)
   const [movieData, setMovieData] =useState([])
   const image = 'https://image.tmdb.org/t/p/w500/'
 

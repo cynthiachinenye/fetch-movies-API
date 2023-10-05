@@ -4,8 +4,12 @@ import Movies from './Components/Movies'
 import TvShow from './Components/TvShow'
 import Pricing from './Components/Pricing'
 import Trends from './Components/Trends'
+
+export const container = React.createContext() 
+
 function App() {
   return (
+    <container.Provider>
     <div className="app">
     <BrowserRouter>
     <Navbar/>
@@ -21,6 +25,7 @@ function App() {
 </BrowserRouter>
 
     </div>
+    </container.Provider>
   );
 }
 
