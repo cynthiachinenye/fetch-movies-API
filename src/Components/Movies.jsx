@@ -25,13 +25,14 @@ function Movies() {
  },[])
  console.log(movieData)
   return (
-    <div className='main'>
+    <div className={toggle ? 'mainBgColor':'secondaryBgColor'}>
+    <div className='movie-container'>
       {
         movieData.map((movies)=> {
           return(
             <div className='main-container'>
           <div id='container'>
-           <AiFillPlayCircle color='green'  fontSize={40} id='play-icon'/>
+           <AiFillPlayCircle color='#fff'  fontSize={40} id='play-icon'/>
            <img src= { movies.poster_path ?`${image}${movies.poster_path}`: noImage} alt=''/>
            <h3 className='movie-names'>{movies.title}</h3>
           </div>
@@ -40,6 +41,7 @@ function Movies() {
         })
       }
     </div >
+    </div>
   )
 }
 

@@ -1,49 +1,62 @@
 @import '../global.scss';
 
-.main{
-  width: $width;
-  display:flex;
-  flex-wrap:wrap;
-  align-items: center;
-  margin-left:20px;
+.mainBgColor{
+    background-color: #0c1e25;
+    width:100%;
 
-    .main-container{ 
-        
-        display:flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top:30px;
-       
-    
-    #container{
-        display:flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        flex-wrap:wrap;
-        position:relative;
-    
-        img{
-            width:350px;
-            padding:20px;
-            
-        }
 
-        #play-icon{
-            position:absolute;
-            top:480px;
-            left:180px;
-            right:0px;
-            bottom:0;
-            
-    
-        }
-        .movie-names{
-            font-size: 15px;
-        }
-     
-    
+    .secondaryBgColor{
+        background-color: #fff;
+        width:100%;
+
+
+        .movie-container{
+            width: $width;
+            display:flex;
+            flex-wrap:wrap;
+            align-items: center;
+            margin-left:20px;
+          
+              .main-container{ 
+                  
+                  display:flex;
+                  align-items: center;
+                  justify-content: space-around;
+                  margin-top:30px;
+                 
+              
+              #container{
+                  display:flex;
+                  align-items: center;
+                  justify-content: space-around;
+                  flex-direction: column;
+                  flex-wrap:wrap;
+                  position:relative;
+              
+                  img{
+                      width:350px;
+                      padding:20px;
+                      border-radius:20px;
+                      
+                  }
+          
+                  #play-icon{
+                      position:absolute;
+                      top:480px;
+                      left:180px;
+                      right:0px;
+                      bottom:0;
+                      
+              
+                  }
+                  .movie-names{
+                      font-size: 15px;
+                  }
+               
+              
+              }
+              }
+              
+          }
     }
-    }
-    
 }
