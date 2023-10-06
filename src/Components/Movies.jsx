@@ -8,6 +8,7 @@ import '../Styles/movies.scss'
 function Movies() {
   const {toggle}= useContext(container)
   const [movieData, setMovieData] =useState([])
+  const [trailer, setTrailer] = useState(true)
   const image = 'https://image.tmdb.org/t/p/w500/'
 
   async function movieShow (){
@@ -40,7 +41,8 @@ function Movies() {
           )
         })
       }
-    </div >
+
+    </div>
     </div>
   )
 }

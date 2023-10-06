@@ -4,12 +4,13 @@ import Movies from './Components/Movies'
 import TvShow from './Components/TvShow'
 import Pricing from './Components/Pricing'
 import Trends from './Components/Trends'
+import React from "react";
 
 export const container = React.createContext() 
 
 function App() {
   return (
-    <container.Provider>
+    <container.Provider value={Movies} key={Movies.id}>
     <div className="app">
     <BrowserRouter>
     <Navbar/>
