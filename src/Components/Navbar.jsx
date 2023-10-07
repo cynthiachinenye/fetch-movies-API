@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 
 
 function Navbar() {
-    const [toggle, setToggle] = useState([])
+    const [toggle, setToggle] = useState(true)
     return (
         <div className='navbar'>
             <nav className='nav'>

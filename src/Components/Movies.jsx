@@ -33,7 +33,7 @@ function Movies() {
      {
        movieData.map((movies)=> {
          return(
-           <div className='main-container'>
+           <div className={ trailer ? 'main-container': 'noContainer'}>
          <div id='container'>
           <AiFillPlayCircle color='#fff'  fontSize={40} id='play-icon'/>
           <img src= { movies.poster_path ?`${image}${movies.poster_path}`: noImage} alt=''/>
