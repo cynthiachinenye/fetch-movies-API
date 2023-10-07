@@ -13,16 +13,16 @@ function Navbar() {
                 
                     <h1 id={toggle ? "" : 'heading'}>LOGO..</h1>
             
-                    <NavLink to='/' className='link'>
+                    <NavLink to='/' className='link' style={({isActive}) => {return {color:isActive ? '#fff' : '#ee9b00'}}}>
                     <span id={toggle ? "movies" : "movie-light"}>Movies</span>
                     </NavLink>
-                    <NavLink to='/TvShow' className='link'>
+                    <NavLink to='/TvShow' className='link'  style={({isActive}) => {return {color:isActive ? '#fff' : '#ee9b00'}}}>
                     <span id={toggle ? "movies" : "tv-light"}>Tv Shows</span>
                     </NavLink>
-                    <NavLink to='/Trends' className='link'>
+                    <NavLink to='/Trends' className='link'  style={({isActive}) => {return {color:isActive ? '#fff' : '#ee9b00'}}}>
                     <span id={toggle ? "movies" : "trend-light"}>Trending</span>
                     </NavLink>
-                    <NavLink to='/Pricing' className='link'>
+                    <NavLink to='/Pricing' className='link'  style={({isActive}) => {return {color:isActive ? '#fff' : '#ee9b00'}}}>
                     <span id={toggle ? "movies" : "price-light"}>Pricing</span>
                     </NavLink>
                 </div>
