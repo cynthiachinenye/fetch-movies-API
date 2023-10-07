@@ -14,7 +14,7 @@
                   display:flex;
                   align-items: center;
                   justify-content: space-around;
-                  margin-top:30px;
+                  margin-top:20px;
                  
               
               #container{
@@ -26,23 +26,33 @@
                   position:relative;
               
                   img{
-                      width:350px;
-                      padding:20px;
-                      border-radius:20px;
+                      width:200px;
+                      padding:20px 20px 20px 20px;
+                      border-radius:50px;
+                      cursor:pointer;
+                      transition: all 1s ease;
                       
+                  }
+                  &:hover{
+                    
                   }
           
                   #play-icon{
                       position:absolute;
-                      top:480px;
-                      left:180px;
+                      top:280px;
+                      left:100px;
                       right:0px;
                       bottom:0;
                       
               
                   }
                   .movie-names{
-                      font-size: 15px;
+                      font-size: 12px;
+                      text-align: left;
+                     white-space: nowrap;
+                     overflow: hidden;
+                     width: 150px;
+                    
                   }
                
               
