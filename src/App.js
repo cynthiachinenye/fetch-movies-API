@@ -5,6 +5,7 @@ import TvShow from './Components/TvShow'
 import Pricing from './Components/Pricing'
 import Trends from './Components/Trends'
 import React from "react";
+import'./Styles/app.css'
 
 export const container = React.createContext() 
 
