@@ -11,7 +11,7 @@ function Navbar() {
             <nav className='nav'>
                 <div className='nav-opt hide '>
                 
-                    <h1 id={toggle ? "" : 'heading'}>LOGO..</h1>
+                    <h1 id={toggle ? " " : 'heading'}>LOGO..</h1>
             
                     <NavLink to='/' className='link' style={({isActive}) => {return {color:isActive ? '#fff' : '#ee9b00'}}}>
                     <span id={toggle ? "movies" : "movie-light"}>Movies</span>
