@@ -4,14 +4,17 @@ import Movies from './Components/Movies'
 import TvShow from './Components/TvShow'
 import Pricing from './Components/Pricing'
 import Trends from './Components/Trends'
-import React from "react";
+import React,{useContext, useState} from "react";
 import'./Styles/app.css'
 
 export const container = React.createContext() 
 
 function App() {
+  const [toggle,setToggle] = useState(true);
+  console.log(toggle)
+
   return (
-    <container.Provider value={Movies} key={Movies.id}>
+    <container.Provider value={{toggle}} key={Movies.id}>
     <div className="app">
     <BrowserRouter>
     <Navbar/>
