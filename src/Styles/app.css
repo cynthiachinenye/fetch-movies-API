@@ -6,3 +6,9 @@
     background-color: #fff;
     width:100%;
 }
+#smaller-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}

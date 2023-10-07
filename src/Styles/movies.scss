@@ -24,18 +24,21 @@
                   flex-direction: column;
                   flex-wrap:wrap;
                   position:relative;
+                  cursor:pointer ;
+                  transition: all 1s ease-in-out;
+                 
               
                   img{
                       width:200px;
                       padding:20px 20px 20px 20px;
-                      border-radius:50px;
-                      cursor:pointer;
-                      transition: all 1s ease;
+                      border-radius:40px;
                       
+                     
+                      
+                  }&:hover{
+                    transform:scale(1.05)
                   }
-                  &:hover{
-                    
-                  }
+                 
           
                   #play-icon{
                       position:absolute;
@@ -44,16 +47,10 @@
                       right:0px;
                       bottom:0;
                       
+                      
               
                   }
-                  .movie-names{
-                      font-size: 12px;
-                      text-align: left;
-                     white-space: nowrap;
-                     overflow: hidden;
-                     width: 150px;
-                    
-                  }
+                
                
               
               }
