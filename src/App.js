@@ -10,11 +10,11 @@ import'./Styles/app.css'
 export const container = React.createContext() 
 
 function App() {
-  // const [toggle,setToggle] = useState(true);
+  const [toggle,setToggle] = useState(true);
   // console.log(toggle)
 
   return (
-    <container.Provider value={{Movies}} key={Movies.id}>
+    <container.Provider value={{toggle}}>
     <div className="app">
     <BrowserRouter>
     <Navbar/>
